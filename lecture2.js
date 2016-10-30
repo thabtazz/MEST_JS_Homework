@@ -71,6 +71,7 @@ var sliced = arr.slice(0,2);
 var sliced1 = arr.slice(4,-2);
 var sliced2 = arr.slice(6);
 
+
 console.log(sliced + " " + sliced1 + " " + sliced2);
 /*
  * 7. what is the result(output of following code):
@@ -153,8 +154,8 @@ console.log(addTwoNumber(256, 532));
  *    use bind function here to make namer() function to call 'ashwin'
  *    and lars
  */
-
-
+console.log(namer.bind(person1)());
+console.log(namer.bind(person2)());
 
 /*
  * 12. you have following object:
@@ -169,7 +170,8 @@ console.log(addTwoNumber(256, 532));
  *  a. what is the result when we invoke count()?
  *  b. use bind on function expression to make this work.
  */
-
+console.log(count());
+console.log(count.bind(number)());
 /*
  * 13. you have following objects:
  *     var person1 = {
@@ -188,6 +190,7 @@ console.log(addTwoNumber(256, 532));
  *
  *  use call methods on function expression to make this work.
  */
+hello.call(person1, "Hi")
 
 
 
